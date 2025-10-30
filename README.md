@@ -137,3 +137,31 @@ Relationships:
 
 - Email or Teams alerts for AQI above threshold.
 
+### 9️⃣ Notes / Recommendations
+
+- Use **direct query mode** for real-time IoT or API-based datasets.
+
+- Pre-aggregate historical data for performance efficiency.
+
+- Highlight hazardous days using conditional formatting.
+
+- Integrate predictive AQI trends if models are available.
+
+## 📁 Project Structure
+### 📦 climate-air-quality-analysis
+
+```plaintext
+├── data/                    # Raw and processed datasets
+├── notebooks/               # Jupyter notebooks for EDA and analysis
+├── scripts/                 # Python scripts for ETL, cleaning, and analysis
+│   ├── load_data.py
+│   ├── clean_data.py
+│   ├── feature_engineering.py
+│   ├── trend_analysis.py
+│   ├── visualize_results.py
+├── dashboard/               # Power BI / Streamlit dashboard files
+├── models/                  # Optional predictive AQI model
+├── docs/                    # Workflow and Power BI spec files
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
+```
