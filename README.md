@@ -14,3 +14,17 @@ The goal is to provide insights into air pollution levels, temperature patterns,
 - Correlate climate factors with pollution and seasonal effects.
 
 - Build interactive dashboards for monitoring and decision support.
+
+## 🧠 Key Features
+
+✅ Collects climate and air quality data from multiple sources.
+
+✅ Preprocesses data to handle missing values and inconsistencies.
+  
+✅ Performs statistical and trend analysis on temperature, pollutants, and AQI.
+
+✅ Generates visualizations for spatial and temporal patterns.
+
+✅ Supports predictive modeling of air quality trends.
+
+✅ Deploys interactive dashboards (Power BI / Streamlit) for monitoring.
