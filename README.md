@@ -54,3 +54,11 @@ The Power BI report visualizes climate and air quality trends using historical a
 - Identify hotspots and seasonal changes in air quality.
 
 - Support predictive modeling insights.
+### 2️⃣ Data Sources
+|Source	                             |Type	            |Description
+|------------------------------------|------------------|----------------------------------------------------------------------|
+|OpenAQ API                          |	JSON / API	    |Real-time pollutant data (PM2.5, PM10, CO, NO2, SO2)|
+|NOAA / Meteorological Stations      |	CSV / API	      |Historical climate data (temperature, humidity, wind speed)|
+|Local IoT Sensors                   |	CSV	            |Hyperlocal air quality readings|
+|Processed Metrics                   |	CSV / Parquet   |Aggregated metrics like daily AQI, pollutant averages, temperature trends|
+
