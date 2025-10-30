@@ -116,3 +116,14 @@ Relationships:
 - Pollutant Type (PM2.5, PM10, CO, NO2, SO2)
 
 - AQI Category (Good, Moderate, Unhealthy, Hazardous)
+
+
+### 7️⃣ Dashboard Layout
+
+- **Top Section:** KPIs & Summary Cards
+
+- **Middle Section:** Trend Line Charts (AQI, Climate Parameters)
+
+- **Bottom Section:** Map & Alerts Visuals
+
+- **Sidebar / Slicers:** Date, Region, Pollutant Filters
