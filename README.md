@@ -105,3 +105,14 @@ Relationships:
 | **Seasonal Analysis** | Clustered Bar           | Average pollutant levels by season         |
 | **Alerts & KPI**      | Card                    | Count of days exceeding AQI threshold      |
 
+
+
+### 6️⃣ Filters & Slicers
+
+- Date Range (Day / Week / Month / Year)
+
+- City / Region Selector
+
+- Pollutant Type (PM2.5, PM10, CO, NO2, SO2)
+
+- AQI Category (Good, Moderate, Unhealthy, Hazardous)
