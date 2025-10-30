@@ -84,3 +84,11 @@ Relationships:
 
 - `Fact_AirQuality.PollutantID → Dim_Pollutant.PollutantID`
 
+### 4️⃣ Key KPIs & Measures
+|KPI / Measure                    |DAX Formula Example	                                               |Purpose|
+|---------------------------------|--------------------------------------------------------------------|-----------------------------------|
+|Average AQI	                    |AVERAGE(Fact_AirQuality[AQI])	                                     |Track air quality trends
+|Max Pollutant Level              |	MAX(Fact_AirQuality[PM2.5])	                                       |Identify peak pollution events
+|Daily AQI Change                 |	Fact_AirQuality[AQI] - CALCULATE(LASTDATE(Fact_AirQuality[Date]))	 |Trend monitoring
+|Hazardous Day Count              |	COUNTROWS(FILTER(Fact_AirQuality, Fact_AirQuality[AQI] > 150))	   |Alert generation
+|Temperature vs AQI Correlation   |	CORREL(Fact_AirQuality[Temperature], Fact_AirQuality[AQI])	       |Environmental factor analysis
