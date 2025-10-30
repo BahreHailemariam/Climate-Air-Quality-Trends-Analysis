@@ -62,3 +62,25 @@ The Power BI report visualizes climate and air quality trends using historical a
 |Local IoT Sensors                   |	CSV	            |Hyperlocal air quality readings|
 |Processed Metrics                   |	CSV / Parquet   |Aggregated metrics like daily AQI, pollutant averages, temperature trends|
 
+### 3️⃣ Data Model
+
+- Fact Table: `Fact_AirQuality`
+
+   - Date, City, AQI, PM2.5, PM10, CO, NO2, SO2, Temperature, Humidity, WindSpeed
+
+- Dimension Tables:
+
+  - `Dim_City` (CityID, CityName, Region)
+
+  - `Dim_Date` (Date, Year, Month, Day, Weekday)
+
+  - `Dim_Pollutant` (PollutantID, Name, Unit, Threshold)
+
+Relationships:
+
+- `Fact_AirQuality.CityID → Dim_City.CityID`
+
+- `Fact_AirQuality.Date → Dim_Date.Date`
+
+- `Fact_AirQuality.PollutantID → Dim_Pollutant.PollutantID`
+
