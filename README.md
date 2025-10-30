@@ -127,3 +127,13 @@ Relationships:
 - **Bottom Section:** Map & Alerts Visuals
 
 - **Sidebar / Slicers:** Date, Region, Pollutant Filters
+
+
+### 8️⃣ Automation & Refresh
+
+- Daily ETL refresh to update datasets.
+
+- Power BI Service scheduled refresh for dashboards.
+
+- Email or Teams alerts for AQI above threshold.
+
