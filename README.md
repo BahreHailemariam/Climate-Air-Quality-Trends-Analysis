@@ -38,3 +38,19 @@ The goal is to provide insights into air pollution levels, temperature patterns,
 |Visualization                     |Power BI, Matplotlib, Seaborn, Plotly|
 |Database / Storage                |PostgreSQL, CSV, Parquet|
 |Deployment                        |Streamlit, Flask, Airflow|
+
+## ⚙️ Workflow
+## 🌍 Power BI Report Spec: Climate & Air Quality Trends Analysis
+### 1️⃣ Report Overview
+
+The Power BI report visualizes climate and air quality trends using historical and live data. It supports monitoring, trend analysis, and anomaly detection for environmental decision-making.
+
+**Purpose:**
+
+- Track AQI (Air Quality Index) trends across regions.
+
+- Monitor temperature, humidity, and pollutant levels.
+
+- Identify hotspots and seasonal changes in air quality.
+
+- Support predictive modeling insights.
