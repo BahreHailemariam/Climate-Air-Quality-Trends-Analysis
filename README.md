@@ -39,7 +39,63 @@ The goal is to provide insights into air pollution levels, temperature patterns,
 |Database / Storage                |PostgreSQL, CSV, Parquet|
 |Deployment                        |Streamlit, Flask, Airflow|
 
-## ⚙️ Workflow
+
+## ⚙️ Workflow: Climate & Air Quality Trends Analysis
+
+### Overview
+This document describes the end-to-end workflow for analyzing climate and air quality trends, including data extraction, cleaning, feature engineering, analysis, visualization, and automation. Tool suggestions and Python libraries are included.
+
+### 1. Data Extraction
+- **Goal:** Collect environmental data from multiple sources.
+- **Sources:** OpenWeatherMap, NOAA, NASA Earth Data, AirNow, OpenAQ, GeoJSON files.
+- **Tools/Libraries:** Python (`requests`, `pandas`), SQL databases, CSV/Parquet storage.
+
+### 2. Data Cleaning
+- Remove duplicates and irrelevant columns.
+- Handle missing data (interpolation) and normalize timestamps and units.
+- Filter out extreme outliers based on thresholds.
+- **Tools/Libraries:** Python (`pandas`, `numpy`), SQL queries.
+
+### 3. Feature Engineering
+- Compute AQI from pollutant data.
+- Create temperature deviation features and weather flags.
+- Generate time-based features: day, month, season, hour.
+- Aggregate metrics by city/region.
+- **Tools/Libraries:** Python (`pandas`, `numpy`, `scikit-learn`).
+
+### 4. Exploratory Data Analysis (EDA)
+- Trend analysis for AQI, temperature, humidity, and pollutants.
+- Geographical comparison of regions/cities.
+- Correlation studies between climate variables and pollutants.
+- **Tools/Libraries:** Python (`matplotlib`, `seaborn`, `plotly`), Power BI.
+
+### 5. Modeling (Optional)
+- Regression: Predict AQI or pollutant concentrations.
+- Classification: Air quality categories (Good, Moderate, Unhealthy, Hazardous).
+- Time series forecasting: ARIMA, Prophet, or LSTM models.
+- **Tools/Libraries:** `scikit-learn`, `statsmodels`, `prophet`, `tensorflow` (optional).
+
+### 6. Aggregation & Metrics Calculation
+- Compute KPIs: Average AQI, pollution days, seasonal averages, city rankings.
+- Store aggregated tables for dashboards.
+- **Tools/Libraries:** Python (`pandas`), SQL databases, CSV/Parquet.
+
+### 7. Visualization (Power BI Dashboard)
+- Trend Line Charts, Maps, Correlation Heatmaps, Seasonal Bar Charts, KPI Cards.
+- Interactive filters for Date, Region, City, Season, Pollutant.
+- **Tools/Libraries:** Power BI, DAX measures for KPIs.
+
+### 8. Automation
+- Schedule ETL jobs for daily or periodic refresh.
+- Power BI Service automatic dashboard refresh.
+- Alert emails for AQI threshold exceedances.
+- **Tools/Libraries:** Python (`schedule`), cron jobs, Airflow, Power BI Service.
+
+### 9. Deployment & Monitoring
+- Store data in cloud DB (Azure, AWS, GCP BigQuery).
+- Publish dashboards to shared workspace.
+- Monitor API health and data quality regularly.
+
 ## 🌍 Power BI Report Spec: Climate & Air Quality Trends Analysis
 ### 1️⃣ Report Overview
 
