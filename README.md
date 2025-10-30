@@ -28,3 +28,13 @@ The goal is to provide insights into air pollution levels, temperature patterns,
 ✅ Supports predictive modeling of air quality trends.
 
 ✅ Deploys interactive dashboards (Power BI / Streamlit) for monitoring.
+
+🛠️ Tools & Technologies
+| Category	    |Tools / Libraries|
+|--------------|-------------------|
+| Data Collection	                 |Pandas, Requests, OpenAQ API, NOAA API|
+|Data Cleaning & Transformation    |Pandas, NumPy, Geopandas|
+|Analysis & Modeling	             |Scikit-learn, Statsmodels|
+|Visualization                     |Power BI, Matplotlib, Seaborn, Plotly|
+|Database / Storage                |PostgreSQL, CSV, Parquet|
+|Deployment                        |Streamlit, Flask, Airflow|
